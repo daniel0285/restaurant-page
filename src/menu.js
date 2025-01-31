@@ -3,9 +3,11 @@ export function renderMenuContent() {
   main.innerHTML = "";
   const fragment = document.createDocumentFragment();
   const menu = document.createElement("section");
+  menu.classList.add("menu");
 
   menu.innerHTML = `
       <h1>Menu</h1>
+      <div class="dishes">
       <div class="dish">
           <h2>Adobo</h2>
           <p>A rich, flavorful stew made with tender chicken and pork, 
@@ -25,6 +27,7 @@ export function renderMenuContent() {
           <p>Indulge in the crispy, golden perfection of Lechon Kawali – tender,
           juicy pork belly deep-fried until the skin crackles and bursts with flavor,
             served with a side of liver sauce for the ultimate savory delight.</p>
+      </div>
       </div>`;
 
   fragment.append(menu);

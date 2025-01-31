@@ -3,6 +3,7 @@ export function renderAboutContent() {
   main.innerHTML = "";
   const fragment = document.createDocumentFragment();
   const about = document.createElement("section");
+  about.classList.add("about");
 
   about.innerHTML = `        
       <h2>Contact Us</h2>
