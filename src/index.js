@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", renderHomeContent);
 function clickHandler(e) {
   if (e.target.className === "nav-btn") {
     const buttons = document.querySelectorAll(".nav-btn");
-    buttons.forEach((elem) => elem.classList.remove("target"));
-    e.target.classList.add("target");
+    buttons.forEach((elem) => elem.classList.remove("current"));
+    e.target.classList.add("current");
     changeDomContent(e.target.id);
   }
 }
