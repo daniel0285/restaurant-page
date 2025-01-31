@@ -13,3 +13,7 @@ function clickHandler(e) {
     changeDomContent(e.target.id);
   }
 }
+
+const footer = document.querySelector("footer > p");
+
+footer.innerText = `Copyright © ${new Date().getFullYear()}  daniel`;

@@ -28,6 +28,11 @@ export function renderMenuContent() {
           juicy pork belly deep-fried until the skin crackles and bursts with flavor,
             served with a side of liver sauce for the ultimate savory delight.</p>
       </div>
+      <div class="dish">
+            <h2>Pancit Canton</h2>
+            <p>A hearty and flavorful stir-fried noodle dish loaded with a medley of crisp vegetables, succulent shrimp,
+                and tender pork, tossed in a savory soy-based sauce for the perfect balance of taste and texture.</p>
+        </div>
       </div>`;
 
   fragment.append(menu);

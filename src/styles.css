@@ -68,24 +68,52 @@ ul {
   background-color: rgb(255, 255, 255);
 }
 
-.home {
+.home,
+.menu {
   display: flex;
   flex-direction: column;
+  margin: 3rem 0;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.home {
   gap: 1rem;
 
   text-align: center;
   background-color: rgba(0, 0, 0, 0.203);
-  border-radius: 20px;
+
   max-width: 500px;
-  padding: 3rem;
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  background-color: rgba(66, 66, 66, 0.27);
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 3px;
+  }
 
   .dishes {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .dish {
+    padding: 1.5rem;
+    background-color: rgba(50, 50, 50, 0.41);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
   }
 }
