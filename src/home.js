@@ -1,13 +1,12 @@
 export function renderHomeContent() {
+  const main = document.getElementById("content");
   main.innerHTML = "";
   const fragment = document.createDocumentFragment();
+  const home = document.createElement("section");
 
-  const header = document.createElement("h2");
-  header.textContent = "home text here";
+  home.innerHTML = `<h1>Welcome to Filipino Flavors</h1>
+                    <p>Experience the best of Filipino cuisine!</p>`;
 
-  const description = document.createElement("p");
-  description.textContent = "home description here";
-
-  fragment.append(header, description);
+  fragment.append(home);
   main.append(fragment);
 }

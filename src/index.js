@@ -1,7 +1,9 @@
 import { changeDomContent } from "./DOM.js";
+import { renderHomeContent } from "./home";
 import "./styles.css";
 
 document.body.addEventListener("click", clickHandler);
+document.addEventListener("DOMContentLoaded", renderHomeContent);
 
 function clickHandler(e) {
   if (e.target.className === "nav-btn") {
