@@ -1,3 +1,21 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-  background-color: rebeccapurple;
+  min-height: 100%;
+  background-color: rgb(201, 201, 201);
+  border: 10px solid red;
+}
+
+button {
+  cursor: pointer;
 }
