@@ -20,12 +20,58 @@ function changeDomContent(target) {
 
   if (target === currentDomContent) return;
 
-  if (navBtn.includes(target)) {
+  if (target === "home") {
     currentDomContent = target;
-    main.textContent = currentDomContent;
-    console.log(currentDomContent);
     renderHomeContent();
+  } else if (target === "menu") {
+    currentDomContent = target;
+    renderMenuContent();
+  } else if (target === "about") {
+    currentDomContent = target;
+    renderAboutContent();
   }
+}
+
+function renderHomeContent() {
+  main.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+
+  const header = document.createElement("h2");
+  header.textContent = "home text here";
+
+  const description = document.createElement("p");
+  description.textContent = "home description here";
+
+  fragment.append(header, description);
+  main.append(fragment);
+}
+
+function renderMenuContent() {
+  main.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+
+  const header = document.createElement("h2");
+  header.textContent = "menu text here";
+
+  const description = document.createElement("p");
+  description.textContent = "menu description here";
+
+  fragment.append(header, description);
+  main.append(fragment);
+}
+
+function renderAboutContent() {
+  main.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+
+  const header = document.createElement("h2");
+  header.textContent = "about text here";
+
+  const description = document.createElement("p");
+  description.textContent = "about description here";
+
+  fragment.append(header, description);
+  main.append(fragment);
 }
 
 export { changeDomContent, greeting };
