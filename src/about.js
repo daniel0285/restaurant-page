@@ -6,7 +6,7 @@ export function renderAboutContent() {
   about.classList.add("about");
 
   about.innerHTML = `        
-      <h2>Contact Us</h2>
+      <h1>Contact Us</h1>
       <p>Visit us at:</p>
       <address>
       123 Filipino Street, Manila, Philippines<br>
