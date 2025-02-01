@@ -15,5 +15,4 @@ function clickHandler(e) {
 }
 
 const footer = document.querySelector("footer > p");
-
 footer.innerText = `Copyright © ${new Date().getFullYear()}  daniel`;

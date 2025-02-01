@@ -117,3 +117,10 @@ ul {
     border-radius: 20px;
   }
 }
+
+footer {
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+}
