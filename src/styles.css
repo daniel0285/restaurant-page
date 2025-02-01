@@ -1,3 +1,15 @@
+:root {
+  --nav-footer-bg-clr: rgb(21, 20, 20);
+  --txt-clr: rgb(255, 255, 255);
+  --header-clr: rgb(255, 183, 0);
+
+  --content-clr: rgba(0, 0, 0, 0.458);
+  --section-clr: rgba(66, 66, 66, 0.586);
+  --box-clr: grey;
+  --dish-clr: rgba(32, 32, 32, 0.633);
+  --dish-hov-clr: rgba(50, 50, 50, 0.849);
+}
+
 *,
 *::after,
 *::before {
@@ -37,21 +49,28 @@ ul {
   align-items: center;
   gap: 1.5rem;
   padding: 1rem;
-  background-color: black;
+  background-color: var(--nav-footer-bg-clr);
   min-width: 100%;
+}
+
+footer {
+  background-color: var(--nav-footer-bg-clr);
+  padding: 1rem;
+  color: var(--txt-clr);
+  text-align: center;
 }
 
 h1,
 h2 {
   text-align: center;
   margin-bottom: 5px;
-  color: rgb(255, 183, 0);
+  color: var(--header-clr);
   font-style: italic;
 }
 
 p,
 address {
-  color: white;
+  color: var(--txt-clr);
   font-size: 1rem;
 }
 
@@ -59,22 +78,26 @@ address {
   outline-color: transparent;
   background-color: transparent;
 
-  padding: 0.4rem;
+  padding: 0.3rem;
   border: none;
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease;
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: var(--txt-clr);
 
   &:hover {
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid var(--txt-clr);
   }
 }
 
 .current {
-  border-bottom: 3px solid rgb(255, 255, 255);
-  font-style: italic;
+  color: var(--header-clr);
+  border-bottom: 3px solid var(--header-clr);
+  transform: scale(1.1);
+  &:hover {
+    border-bottom: 3px solid var(--header-clr);
+  }
 }
 
 #content {
@@ -82,7 +105,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.458);
+  background-color: var(--content-clr);
   backdrop-filter: blur(3px);
 }
 
@@ -95,7 +118,8 @@ address {
   padding: 2rem;
   border-radius: 20px;
   max-width: 700px;
-  background-color: rgba(66, 66, 66, 0.586);
+  background-color: var(--section-clr);
+  outline: 2px solid rgb(73, 73, 73);
 }
 
 .home {
@@ -119,22 +143,15 @@ address {
 
   .dish {
     padding: 1.5rem;
-    background-color: rgba(50, 50, 50, 0.41);
+    background-color: var(--dish-clr);
     width: 300px;
     height: 250px;
     border-radius: 20px;
     transition: all 0.3s ease;
     &:hover {
-      transform: scale(1.1);
-      outline: 3px solid rgb(255, 183, 0);
-      background-color: rgba(50, 50, 50, 0.849);
+      transform: scale(105%);
+      outline: 3px solid var(--header-clr);
+      background-color: var(--dish-hov-clr);
     }
   }
-}
-
-footer {
-  background-color: black;
-  padding: 0.5rem;
-  color: white;
-  text-align: center;
 }
